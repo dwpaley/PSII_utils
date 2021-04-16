@@ -1,0 +1,15 @@
+$DUMMY_INPUT_PLACEHOLDER
+input.experiments_suffix=.expt
+input.reflections_suffix=.refl
+output.output_dir=$OUTPUT_DIR
+output.prefix=$OUTPUT_PREFIX
+dispatch.step_list=input model_scaling statistics_unitcell statistics_beam model_statistics statistics_resolution group errors_merge statistics_intensity merge statistics_intensity_cxi
+input.parallel_file_load.method=uniform
+scaling.model=/global/cfs/cdirs/m3562/dwpaley/ref_structures/6w1o.cif
+scaling.resolution_scalar=0.95
+scaling.mtz.mtz_column_F=Iobs
+statistics.n_bins=20
+merging.d_min=2.5
+merging.merge_anomalous=True
+merging.error.model=ev11
+output.do_timing=True
